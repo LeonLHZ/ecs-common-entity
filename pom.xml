@@ -14,5 +14,11 @@
             <artifactId>ganymed-ssh2</artifactId>
             <version>build210</version>
         </dependency>
+
+        <dependency>
+               <groupId>cn.lhz</groupId>
+           <artifactId>ecs-common</artifactId>
+           <version>1.0-SNAPSHOT</version>
+           </dependency>
     </dependencies>
 </project>

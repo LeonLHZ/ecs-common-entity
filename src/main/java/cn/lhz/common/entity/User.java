@@ -1,9 +1,5 @@
 package cn.lhz.common.entity;
 
-import ch.ethz.ssh2.Connection;
-
-import java.util.*;
-
 public class User {
     private String userId;
 
@@ -13,9 +9,9 @@ public class User {
 
     private String userPassword;
 
-    private List<Esc>escs;
+    //private List<Esc>escs;
 
-    private Map<String,Connection> connections=new HashMap<>();
+   // private Map<String,Connection> connections=new HashMap<>();
 
     public String getUserId() {
         return userId;
@@ -49,7 +45,7 @@ public class User {
         this.userPassword = userPassword == null ? null : userPassword.trim();
     }
 
-    public Map<String, Connection> getConnections()
+  /*  public Map<String, Connection> getConnections()
     {
         return this.connections;
     }
@@ -57,9 +53,9 @@ public class User {
     public void setConnections(Map<String, Connection> connections)
     {
         this.connections = connections;
-    }
+    }*/
 
-    public List<Esc> getEscs()
+   /* public List<Esc> getEscs()
     {
         return escs;
     }
@@ -67,7 +63,7 @@ public class User {
     public void setEscs(List<Esc> escs)
     {
         this.escs = escs;
-    }
+    }*/
 
     @Override
     public String toString()
@@ -77,8 +73,6 @@ public class User {
                 ", userUsername='" + userUsername + '\'' +
                 ", userImg='" + userImg + '\'' +
                 ", userPassword='" + userPassword + '\'' +
-                ", escs=" + escs +
-                ", connections=" + connections +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 package cn.lhz.common.entity;
 
-public class Esc {
+public class Esc extends BaseEntity{
+    private static final long serialVersionUID = -863530744135205551L;
     private String escId;
 
     private String escPublicIp;
